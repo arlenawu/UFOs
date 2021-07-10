@@ -6,6 +6,9 @@ __pycache__/
 # C extensions
 *.so
 
+static/js/app_OLD.js
+
+
 # Distribution / packaging
 .Python
 build/
