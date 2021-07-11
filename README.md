@@ -8,12 +8,18 @@ The purpose of this project is to display UFO sighting information in a neat, ea
 **How to Search**
 - All search entries must be in lower case
   - Instead of "TX", write "tx"
+  - Instead of "Fort Worth", write "fort worth"
+- Dates must be written in the mm/dd/yyyy format
+  - Ex. December 1, 2010 should be written as "12/01/2010"
 - After typing your search query, press the Enter button or click anywhere on the page outside of the search box to run the query
 - You may narrow your search results by entering search criteria in more than one search field
   - However, the table cannot filter properly if you enter more than one search criteria in the same search field
-  - 
-Example Search Entry:
+
+Example Search Entry (Searching for "light" UFOs in California):
 
 ![Example Search Entry](static/images/example_search.PNG)
 
 # Summary
+Currently, the primary drawback of this webpage is that the search function is still quite primitive, and can easily fail to work if the user input isn't perfect.
+
+One way to improve the search function is to remove its case sensitivity, so that users can spell cities, states, and countries with both upper and lower case letters. Also, one useful UX feature to add would be to provide user feedback if their search query failed to match anything in the table. A pop up dialog box would be too intrusive, but perhaps directly beneath the relevant search field, an error message can specify which search criteria the user entered that found no matches. For example, if the user tried to search for "austin" in the City field, the message could say, "found no matches for 'austin'".
